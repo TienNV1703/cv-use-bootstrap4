@@ -7,7 +7,7 @@
         padding: 20px 15px;
     }
 
-    .pl_3 {
+    .pl-15 {
         padding-left: 0px !important;
     }
     /*.cv-name {*/
@@ -43,7 +43,7 @@
         padding: 20px 15px;
     }
 
-    .pl_3 {
+    .pl-15 {
         padding-left: 0px !important;
     }
 
@@ -54,7 +54,7 @@
         background-position: center;
     }
 
-    .header-right, .pro_skill , .per_skill{
+    .header-right{
         width: 100% !important;
     }
 
@@ -74,16 +74,20 @@
         justify-content: center;
     }
 
-    .project {
+    .project, .pro-botton, .person-button,
+    .work-add-botton, .edu-add-botton {
         display: none!important;
-    }
-    .resize-project {
-        display: flex!important;
     }
 
     .slide {
         display: flex;
         flex-direction: column;
+    }
+
+    .pro-botton2, .person-button2,
+    .work-add-botton2, .resize-project,
+    .edu-add-botton2{
+        display: flex!important;
     }
 }
 
@@ -93,7 +97,7 @@
         padding: 20px 15px;
     }
 
-    .pl_3 {
+    .pl-15 {
         padding-left: 0px !important;
     }
 
@@ -105,7 +109,7 @@
 
     }
 
-    .header-right {
+    .header-right{
         width: 100% !important;
     }
 

@@ -1,4 +1,4 @@
-let pro_skill =`<div>
+let pro_skill =`<div class="graphic1">
 						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
 							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
 							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
@@ -11,20 +11,22 @@ let pro_skill =`<div>
 						</svg>
 					</div>`
 
-let person_skill = `<div>
-							<p>ORTHER LANGUAGE</p>
-							<div class="progress">
-								<div class="progress-bar bg-red" style="width:65%">65%</div>
+let person_skill = `<div class="person-skill">
+						<h4>Other skill</h4>
+						<div class="all">
+							<div class="percent percent-1">
 							</div>
-						</div>`
+							<p class="percent-text-1">65%</p>
+						</div>
+					</div>`
 let experience = `<div class="d-flex flex-row experience">
 						<div class="align-self-center">
 							<img src="images/Polygon.png">
 						</div>
 						<div class="line-doted align-self-center">
 						</div>
-						<div class="w-e-content p-2 text-justify">
-							<p><b><u>(2010 - 2019)</u> ABC COMPANY</b></p>
+						<div class="w-e-content p-2">
+							<p class="font-medium">(<u>2010 - 2019</u>) ABC COMPANY</p>
 							<p>Developer</p>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
 						</div>
@@ -60,7 +62,7 @@ let ft4 =`<div class="d-flex project_name bg_blue justify-content-center align-i
 					</div>`
 
 let ft5 = `<div class="d-flex project_name_2 bg_red_or justify-content-center align-items-center">
-						<img src="images/2222.png" alt="">
+						<img src="images/1111.png" alt="">
 					</div>`
 
 let ft6 = `<div class="d-flex project_name bg_red justify-content-center align-items-center">
@@ -68,31 +70,48 @@ let ft6 = `<div class="d-flex project_name bg_red justify-content-center align-i
 					</div>`
 
 let ft7 = `<div class="d-flex project_name bg_yel2 justify-content-center align-items-center">
-						<img src="images/1111.png" alt="">
+						<img src="images/2222.png" alt="">
 					</div>`
 
 $(document).ready(function(){
+
+    // add Experience
     for (let i=0; i<4; i++){
         $("#add-ex-1").before(experience)
         $("#add-ex-2").before(experience)
 
     };
-
+    // add Experience when click "Add Experience"
     $("#add-ex-1").click(function () {
+        $("#add-ex-1").before(experience)
+    });
+
+    $(".work-add-botton2").click(function () {
         $("#add-ex-1").before(experience)
     });
 
     $("#add-ex-2").click(function () {
         $("#add-ex-2").before(experience)
     });
+    $(".edu-add-botton2").click(function () {
+        $("#add-ex-2").before(experience)
+    });
 
+    // add professional skill when click button "Add Skill"
     $("#btn-3").click(function () {
         $("#last_pro_skill").before(pro_skill)
     });
+    $("#btn-3-2").click(function () {
+        $("#last_pro_skill").before(pro_skill)
+    });
+
+    // add personal skill when click button "Add Skill"
 
     $("#btn-4").click(function () {
-        $("#last_personal_skill").before(person_skill)
-
+        $("#last-personal-skill").before(person_skill)
+    });
+    $("#btn-4-2").click(function () {
+        $("#last-personal-skill").before(person_skill)
     });
     
     //Add project on PC
@@ -218,14 +237,5 @@ $(document).ready(function(){
             slidesToScroll: 1,
         });
     })
-
-    // let height = ["200px", "400px", "200px", "200px", "200px", "400px", "200px", "200px", "200px"];
-    // let height_inside = ["151px", "207px", "151px", "151px", "151px", "207px", "151px", "151px", "151px"];
-    // let bg = ["#FD7038", "#EECD10", "#2F2FA1", "#F64C71", "#333333", "#EF5B5B", "#F9BC2D", "#FD7038", "#333333"];
-    // for (i=0; i<height.length; i++){
-    //     text =[];
-    //     text += "<div style='height: "+height[i]+";background-color: "+bg[i]+"; ' class='align-items-center justify-content-center'></div>"
-    // }
-
 
 });

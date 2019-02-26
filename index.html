@@ -7,9 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="slick/slick-theme.css">
 	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="responsive.css">
-	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">-->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
@@ -23,7 +25,7 @@
 				</div>
 
 				<div class="cv-name">
-					<h1><span class="position-relative" style="font-size: 40px; font-weight: bold;"><span class="line-bottom">BUMBLEBEE</span> WALKER<br><span class="position-absolute cv-position">Ruby on Rail Developer</span></span>
+					<h1><span class="position-relative"><span class="line-bottom">BUMBLEBEE</span> WALKER<br><span class="position-absolute cv-position">Ruby on Rail Developer</span></span>
 					</h1>
 
 				</div>
@@ -33,9 +35,9 @@
 			<div class="header-right w-50 padding-top-20 min-h position-relative">
 				<div class="position-relative">
 					<div class="row justify-content-center">
-						<div class="cv-language position-absolute">
-							<button class="btn btn-link float-left">English</button>
-							<button class="btn btn-link float-right">English</button>
+						<div class="d-flex flex-row cv-language position-absolute">
+							<button class="btn btn-link float-left font-medium">English</button>
+							<a class="btn btn-link float-right font-poppins">Japanese</a>
 						</div>
 					</div>
 
@@ -51,38 +53,38 @@
 
 						<div class="row justify-content-center">
 							<div class="text-uppercase infor position-absolute">
-								<div>bumblebee walker</div>
-								<div>17/03/1996</div>
+								<div class="font-medium">bumblebee walker</div>
+								<div class="font-weight-normal">17/03/1996</div>
 							</div>
 						</div>
 						<table class="profile">
 							<tr>
-								<td>Phone</td>
+								<td class="font-medium pl-0">Phone</td>
 								<td>0123456789</td>
 							</tr>
 							<tr>
-								<td>Email</td>
+								<td class="font-medium pl-0">Email</td>
 								<td>bumblebee@gmail.com</td>
 							</tr>
 							<tr>
-								<td>Facebook</td>
+								<td class="font-medium pl-0">Facebook</td>
 								<td>bumblebee</td>
 							</tr>
 							<tr>
-								<td>Skype</td>
+								<td class="font-medium pl-0">Skype</td>
 								<td>bumblebee</td>
 							</tr>
 							<tr>
-								<td>Chatwork</td>
+								<td class="font-medium pl-0">Chatwork</td>
 								<td>bumblebee</td>
 							</tr>
 							<tr>
-								<td>Address</td>
+								<td class="font-medium pl-0">Address</td>
 								<td>58 Tran Binh - Mai Dich - Cau Giay - Ha Noi</td>
 							</tr>
 						</table>
 						<div class="d-flex justify-content-center">
-							<botton class="edit p-2">Edit profile
+							<botton class="edit p-2 px-3">Edit profile
 								<i class="fas fa-pencil-alt"></i>
 							</botton>
 						</div>
@@ -99,15 +101,15 @@
 
 <!--main1 Summary-->
 	<div class="main1 container-fluid d-flex flex-column">
-		<h4 class="mt-2">
-			<span class="tittle-cv line-bottom">Professtional</span>
+		<h4 class="mt-2 font-medium">
+			<span class="tittle-cv line-bottom ">Professtional</span>
 			<span class="tittle-cv line-top">Summary</span>
 		</h4>
-		<div class="mt-3 text-justify">
+		<div class="mt-3 text-justify font-poppins">
 			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dol. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dol.
 		</div>
 		<div class="d-flex justify-content-end">
-			<botton class="edit p-2">Edit summary
+			<botton class="edit p-2 px-3">Edit summary
 				<i class="fas fa-pencil-alt"></i>
 			</botton>
 		</div>
@@ -115,142 +117,153 @@
 
 <!--main2 skills-->
 
-	<div class="main2 container-fluid">
-		<div class="row">
+<div class="main2 container-fluid">
+	<div class="row">
 
-			<!--main2 left-->
+		<!--main2 left-->
 
-			<div class="col-md">
-				<h4 class="mt-2">
-					<span class="tittle-cv line-bottom">Profestional</span> <span class="tittle-cv line-top">Skill</span>
+		<div class="col-sm">
+			<h4 class="mt-2 font-medium">
+				<span class="tittle-cv line-bottom ">Profestional</span> <span class="tittle-cv line-top">Skill</span>
+			</h4>
+
+			<div class="mt-3">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+			</div>
+
+			<div class="d-flex flex-wrap">
+				<div class="graphic1">
+					<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+						<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
+						<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
+
+						<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="75"></circle>
+						<text fill="#ffffff" font-size="14px"
+							  x="40" y="55">75%
+						</text>
+						<p>HTML/CSS</p>
+					</svg>
+				</div>
+
+				<div class="graphic1">
+					<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+						<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
+						<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
+
+						<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="104"></circle>
+						<text fill="#ffffff"
+							  x="40" y="55">65%
+						</text>
+						<p>C#.NET</p>
+					</svg>
+				</div>
+
+				<div class="graphic1">
+					<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+						<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
+						<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
+
+						<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="149"></circle>
+						<text fill="#ffffff" font-size="14px" font-family="Poppins"
+							  x="40" y="55">50%
+						</text>
+						<p>My SQL</p>
+					</svg>
+				</div>
+
+				<div class="graphic1">
+					<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+						<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
+						<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
+
+						<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="75"></circle>
+						<text fill="#ffffff" font-size="14px" font-family="Poppins"
+							  x="40" y="55">75%
+						</text>
+						<p>PHP</p>
+					</svg>
+				</div>
+
+				<div class="graphic1">
+					<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
+						<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
+						<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
+
+						<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="104"></circle>
+						<text fill="#ffffff"
+							  x="40" y="55">65%
+						</text>
+						<p>REACT NATIVE</p>
+					</svg>
+				</div>
+				<div class="ml-5 mb-5 d-flex pro-botton" id="last_pro_skill">
+					<botton id="btn-3" class="edit p-2 px-3">Add skill
+						<i class="fas fa-plus"></i>
+					</botton>
+				</div>
+			</div>
+			<div class="mt-4 d-none justify-content-center pro-botton2 ">
+				<botton id="btn-3-2" class="edit p-2 px-3">Add skill
+					<i class="fas fa-plus"></i>
+				</botton>
+			</div>
+
+		</div>
+
+		<!--main2 right -->
+
+		<div class="col-sm">
+			<div>
+				<h4 class="mt-2 font-medium">
+					<span class="tittle-cv line-bottom">Personal</span> <span class="tittle-cv line-top">Skill</span>
 				</h4>
 
 				<div class="mt-3 text-justify">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
 				</div>
-
-				<div class="graphic1 d-flex flex-wrap">
-					<div>
-						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
-							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
-
-							<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="75"></circle>
-							<text fill="#ffffff" font-size="14px" font-family="Poppins"
-								  x="40" y="55">75%
-							</text>
-							<p>HTML/CSS</p>
-						</svg>
-					</div>
-
-					<div>
-						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
-							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
-
-							<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="104"></circle>
-							<text fill="#ffffff"
-								  x="40" y="55">65%
-							</text>
-							<p>C#.NET</p>
-						</svg>
-					</div>
-
-					<div>
-						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
-							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
-
-							<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="149"></circle>
-							<text fill="#ffffff" font-size="14px" font-family="Poppins"
-								  x="40" y="55">50%
-							</text>
-							<p>My SQL</p>
-						</svg>
-					</div>
-
-					<div>
-						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
-							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
-
-							<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="75"></circle>
-							<text fill="#ffffff" font-size="14px" font-family="Poppins"
-								  x="40" y="55">75%
-							</text>
-							<p>PHP</p>
-						</svg>
-					</div>
-
-					<div>
-						<svg width="100%" height="100%" viewBox="0 0 100 100" class="donut">
-							<circle class="donut-hole" cx="50" cy="50" r="47" fill="#4A0F73"></circle>
-							<circle class="donut-ring" cx="50" cy="50" r="47" fill="transparent" stroke="#FFFFFF" stroke-width="4"></circle>
-
-							<circle class="donut-segment" cx="50" cy="50" r="47" fill="transparent" stroke="#F64C71" stroke-width="4" stroke-dasharray="297" stroke-dashoffset="104"></circle>
-							<text fill="#ffffff"
-								  x="40" y="55">65%
-							</text>
-							<p>REACT NATIVE</p>
-						</svg>
-					</div>
-					<div id="last_pro_skill" class="d-none">
-
-					</div>
-				</div>
-				<div class="d-flex justify-content-center align-items-center">
-					<botton class="edit p-2" id="btn-3">Add Skill
-						<i class="fas fa-plus"></i>
-					</botton>
-				</div>
-			</div>
-
-				<!--main2 right -->
-
-			<div class="col-md">
-				<div>
-					<h4 class="mt-2">
-					<span class="tittle-cv line-bottom">Personal</span> <span class="tittle-cv line-top">Skill</span>
-					</h4>
-
-					<div class="mt-3 text-justify">
-						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-					</div>
-
-					<div class="d-flex flex-column graphic2">
-						<div>
-							<p>TEAM WORK</p>
-							<div class="progress">
-								<div class="progress-bar bg-red" style="width:65%">65%</div>
+				<div class="personal-skill">
+					<div class="person-skill">
+						<h4>team work</h4>
+						<div class="all">
+							<div class="percent percent-1">
 							</div>
+							<p class="percent-text-1">65%</p>
 						</div>
-
-						<div>
-							<p>ENGLISH</p>
-							<div class="progress">
-								<div class="progress-bar bg-red" style="width:75%">75%</div>
+					</div>
+					<div class="person-skill">
+						<h4>english</h4>
+						<div class="all">
+							<div class="percent percent-2">
 							</div>
+							<p class="percent-text-2">75%</p>
 						</div>
-
-						<div>
-							<p>JAPANESE</p>
-							<div class="progress">
-								<div class="progress-bar bg-red" style="width:65%">65%</div>
+					</div>
+					<div class="person-skill">
+						<h4>japanese</h4>
+						<div class="all">
+							<div class="percent percent-3">
 							</div>
+							<p class="percent-text-3">55%</p>
 						</div>
+					</div>
 
-						<div id="last_personal_skill" class="d-flex">
-							<botton id="btn-4" class="edit p-2">Add skill
-								<i class="fas fa-plus"></i>
-							</botton>
-						</div>
+					<div class="mt-4 d-flex justify-content-end person-button" id="last-personal-skill">
+						<botton id="btn-4" class="edit p-2 px-3">Add skill
+							<i class="fas fa-plus"></i>
+						</botton>
+					</div>
 
+					<div class="mt-4 d-none justify-content-center person-button2">
+						<botton id="btn-4-2" class="edit p-2 px-3">Add skill
+							<i class="fas fa-plus"></i>
+						</botton>
 					</div>
 				</div>
 			</div>
-
 		</div>
+
 	</div>
+</div>
 
 
 	<!--main3-->
@@ -260,16 +273,16 @@
 			<!--main3 left-->
 			<div class="col-lg">
 				<div>
-					<h4 class="mt-2">
-					<span class="tittle-cv line-bottom line-bottom-white">Work</span> <span class="tittle-cv line-top-white">Experience</span>
+					<h4 class="mt-2 font-medium">
+					<span class="tittle-cv line-bottom line-bottom-white">Work</span> EXPER<span class="tittle-cv line-top-white">ience</span>
 					</h4>
 
-					<div class="m-3 text-justify">
+					<div class="mt-3">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
 					</div>
 				</div>
 
-				<div class="d-flex flex-column pt-3 ">
+				<div class="d-flex flex-column pt-3 pl-15 pr-33">
 					<div class="thanh-ng"></div>
 					<div class="d-flex flex-row experience">
 						<div class="align-self-center">
@@ -277,16 +290,21 @@
 						</div>
 						<div class="line-doted align-self-center">
 						</div>
-						<div class="w-e-content p-2 text-justify">
-							<p><b><u>(2010 - 2019)</u> ABC COMPANY</b></p>
+						<div class="w-e-content p-2">
+							<p class="font-medium">(<u>2010 - 2019</u>) ABC COMPANY</p>
 							<p>Developer</p>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
 						</div>
 					</div>
 					<div class="experience height-30"></div>
 
-					<div class="d-flex pt-5 pl-5 justify-content-end" id="add-ex-1">
-						<botton class="edit p-2 border-white">Add Experience
+					<div class="d-flex pt-5 pl-5 justify-content-end work-add-botton" id="add-ex-1">
+						<botton class="edit p-2 border-white px-3">Add Work Experience
+							<i class="fas fa-plus"></i>
+						</botton>
+					</div>
+					<div class="d-none pt-5 pl-5 justify-content-center work-add-botton2">
+						<botton class="edit p-2 border-white px-3">Add Work Experience
 							<i class="fas fa-plus"></i>
 						</botton>
 					</div>
@@ -296,16 +314,16 @@
 			<!--main3 right-->
 			<div class="col-lg">
 				<div>
-					<h4 class="mt-2">
+					<h4 class="mt-2 font-medium">
 					<span class="tittle-cv line-bottom line-bottom-white">Educ</span><span class="tittle-cv line-top-white">Ation</span>
 					</h4>
 
-					<div class="mt-3 text-justify">
+					<div class="mt-3">
 						Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
 					</div>
 				</div>
 
-				<div class="d-flex flex-column pt-3 pl_3">
+				<div class="d-flex flex-column pt-3 pl-15 pr-33">
 					<div class="thanh-ng"></div>
 					<div class="d-flex flex-row experience">
 						<div class="align-self-center">
@@ -313,7 +331,7 @@
 						</div>
 						<div class="line-doted align-self-center">
 						</div>
-						<div class="w-e-content p-2 text-justify">
+						<div class="w-e-content p-2">
 							<p><b><u>(2010 - 2019)</u> ABC COMPANY</b></p>
 							<p>Developer</p>
 							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</p>
@@ -321,8 +339,13 @@
 					</div>
 					<div class="experience height-30"></div>
 
-					<div class="d-flex pt-5 pl-5 justify-content-end" id="add-ex-2">
-						<botton class="edit p-2 border-white">Add Experience
+					<div class="d-flex pt-5 pl-5 justify-content-end edu-add-botton" id="add-ex-2">
+						<botton class="edit p-2 border-white">Add Education
+							<i class="fas fa-plus"></i>
+						</botton>
+					</div>
+					<div class="d-none pt-5 pl-5 justify-content-center edu-add-botton2">
+						<botton class="edit p-2 border-white px-3">Add Work Experience
 							<i class="fas fa-plus"></i>
 						</botton>
 					</div>
@@ -337,11 +360,11 @@
 	<!--main4 portfolio-->
 
 	<div class="main4 container-fluid">
-		<h4 class="mt-2">
+		<h4 class="mt-2 font-medium">
 			<span class="tittle-cv line-bottom line-bottom">port</span><span class="tittle-cv line-top">folio</span>
 		</h4>
 
-		<div class="list-featured">
+		<div class="list-featured font-medium">
 			<a href="">ALL</a>
 			<a href="">FEATURED</a>
 			<a href="">2018</a>
@@ -372,7 +395,7 @@
 							<img src="images/1111.png" alt="">
 						</div>
 						<div class="d-flex project_name_2 bg_red_or justify-content-center align-items-center">
-							<img src="images/2222.png" alt="">
+							<img src="images/1111.png" alt="">
 						</div>
 					</div>
 					<div class="w-25 p-0" id="col_4">
@@ -380,7 +403,7 @@
 							<img src="images/1111.png" alt="">
 						</div>
 						<div class="d-flex project_name bg_yel2 justify-content-center align-items-center">
-							<img src="images/1111.png" alt="">
+							<img src="images/2222.png" alt="">
 						</div>
 						<div id="add_project" class="d-flex justify-content-center align-items-center" style="height: 200px">
 							<botton class="edit p-2" id="btn6">Add Projects
@@ -412,7 +435,7 @@
 <!--main5 Reference-->
 
 	<div class="main5 container-fluid">
-		<h4 class="mt-2">
+		<h4 class="mt-2 font-medium">
 			<span class="tittle-cv line-bottom line-bottom">refe</span><span class="tittle-cv line-top">rence</span>
 		</h4>
 

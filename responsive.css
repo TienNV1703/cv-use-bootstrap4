@@ -10,10 +10,6 @@
     .pl-15 {
         padding-left: 0px !important;
     }
-    /*.cv-name {*/
-        /*margin: 20px auto 0 auto;*/
-    /*}*/
-
     .header-left {
         width: 100% !important;
         height: 175px;
@@ -35,6 +31,17 @@
 
     .prof-content {
         top: -130px;
+    }
+
+    .project, .pro-botton, .person-button,
+    .work-add-botton, .edu-add-botton {
+        display: none!important;
+    }
+
+    .pro-botton2, .person-button2,
+    .work-add-botton2, .resize-project,
+    .edu-add-botton2{
+        display: flex!important;
     }
 }
 
@@ -122,5 +129,16 @@
 
     .prof-content {
         top: -130px;
+    }
+
+    .project, .pro-botton, .person-button,
+    .work-add-botton, .edu-add-botton {
+        display: none!important;
+    }
+
+    .pro-botton2, .person-button2,
+    .work-add-botton2, .resize-project,
+    .edu-add-botton2{
+        display: flex!important;
     }
 }
